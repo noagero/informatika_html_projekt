@@ -1,0 +1,163 @@
+body{
+    background-color:slategrey;
+    overflow: scroll;
+}
+
+.center img{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#center{
+    text-align: center;
+}
+
+.hero img{
+    width:100%;
+    height: auto;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.top{
+    text-decoration: none;
+    background-color: rgba(240, 248, 255, 0);
+    position:fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 22px;
+    border-color:beige;
+    border-width: 2px;
+    border-style: solid;
+    z-index: 10;
+}
+
+.nav_bar{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    /*background-color: rgb(103, 113, 124);*/
+    height: 2em;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    z-index: 999;
+}
+
+.nav_bar li{
+  display: inline-block;
+  list-style: none;
+  margin: 5px;
+}
+
+.nav_bar li a{
+    text-decoration: none;
+    color: black;
+}
+
+.nav_bar li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    transition: 0.5s;
+    display: block;
+    margin: auto;
+}
+
+.nav_bar li a:hover{
+    background-color: rgb(107, 124, 141);
+    transform: scale(1.2);
+    
+}
+
+.nav_bar li a:hover::after{
+    width: 100%;
+}
+
+#active{
+    background-color:rgb(135, 151, 165);
+}
+
+.albums ul, li{
+    margin: 1px;
+}
+
+.albums li{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.lyrics h2,pre{
+    text-align: center;
+}
+
+.lyrics ul,a{
+    margin: 3px;
+    text-decoration: none;
+    color: black;
+}
+
+/*galerija*/
+
+
+.container {
+	padding: 2rem;
+}
+
+.slider-wrapper {
+	position: relative;
+	max-width: 48rem;
+	margin: 0 auto;
+}
+
+.slider {
+	display: flex;
+	aspect-ratio: 16 / 9;
+	overflow-x: auto;
+	scroll-snap-type: x mandatory;
+	scroll-behavior: smooth;
+	box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+	border-radius: 0.5rem;
+	-ms-overflow-style: none; /* Hide scrollbar IE and Edge */
+	scrollbar-width: none; /* Hide scrollbar Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.slider::-webkit-scrollbar {
+	display: none;
+}
+
+.slider img {
+	flex: 1 0 100%;
+	scroll-snap-align: start;
+	object-fit: cover;
+}
+
+.slider-nav {
+	display: flex;
+	column-gap: 1rem;
+	position: absolute;
+	bottom: 1.25rem;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 1;
+}
+
+.slider-nav a {
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 50%;
+	background-color: #fff;
+	opacity: 0.75;
+	transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+	opacity: 1;
+}
