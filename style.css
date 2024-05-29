@@ -166,3 +166,8 @@ body{
 .slider-nav a:hover {
 	opacity: 1;
 }
+
+.validator{
+    position: absolute;
+    bottom: 0px;
+}
