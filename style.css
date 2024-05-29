@@ -84,6 +84,11 @@ body{
     background-color:rgb(135, 151, 165);
 }
 
+.concert_table, th, td{
+    width: 50%;
+    border: 1px solid black;
+}
+
 .albums ul, li{
     margin: 1px;
 }
